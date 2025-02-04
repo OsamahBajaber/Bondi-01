@@ -1,0 +1,148 @@
+:root {
+    --dark-color: #19283f;
+    --light-color: #33d1cc;
+    --btn-color: #ff3150;
+    --golden-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body {
+    font-family: "roboto", "sans-serif";
+    height: 6000px;
+}
+.main-btn {
+    color: var(--golden-color);
+    background-color: var(--btn-color);
+}
+
+.section-heading::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--light-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.navbar {
+    background-color: var(--dark-color);
+    z-index: 1;
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active, 
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--light-color);
+}
+.navbar .search {
+    border-left: 1px solid var(--light-color);
+}
+.navbar .search svg {
+    color: var(--light-color);
+}
+.navbar .navbar-toggler {
+    font-size: 25px;
+    border: 1px solid white;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon {
+    color: var(--light-color);
+}
+.features .row h4 {
+    color: var(--golden-color);
+}
+.card {
+    border: none;
+}
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work .btn-holder button {
+    border: none;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.our-work .btn-holder button:not(.main-btn):hover {
+    color: var(--btn-color);
+}
+.our-work .pic-holder {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .more {
+    border: none;
+}
+.stuff .description {
+    max-width: 500px;
+    font-weight: 500;
+}
+.stuff .order {
+    border: none;
+}
+.team {
+    background-color: var(--section-color);
+}
+.team h2 {
+    color: var(--golden-color);
+}
+.team .card h3 {
+    background-color: var(--light-color);
+    color: white;
+}
+.project {
+    background-color: var(--dark-color);
+}
+.blog .card {
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+.blog .card-body h5, .blog .card-body p {
+    text-transform: capitalize;
+}
+.subscribe {
+    background-color: var(--golden-color);
+}
+.subscribe label {
+    color: var(--dark-color);
+}
+.subscribe input[type="text"] {  
+    border: none;
+    border-bottom:1px solid white;
+}
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+.subscribe input[type="button"] {
+    background-color: var(--dark-color);
+    color: var(--golden-color);
+    border: none;
+}
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .copyright span {
+    color: var(--light-color);
+}
+.footer .copyright div span {
+    color: var(--golden-color);
+}
